@@ -12,8 +12,9 @@ public class Card {
         private final Value value;
         public enum Joker {JOKER};
 	private final Joker joker;
-        public Card(Suit s, Value gVal)
+        public Card(Suit s, Value gVal, Joker j)
         {
+            joker = j;
            suit =s;
            value= gVal;
         }
