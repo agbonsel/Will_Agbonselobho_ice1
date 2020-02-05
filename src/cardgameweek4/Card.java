@@ -5,6 +5,10 @@ package cardgameweek4;
  * @author Will Agbonselobho, 2019
  */
 public class Card {
+
+    Card(Joker j, Suit s, Value v) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
         public enum Suit {HEARTS, CLUBS,SPADES,DIAMONDS};
         public enum Value{ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING};

@@ -18,13 +18,16 @@ public class CardHand {
         public void generateHand()
         {
                 int countCards = 0;
+                for(Card.Joker j: Card.Joker.values()) 
+                {
 		for(Card.Suit s: Card.Suit.values())
                 {
                     for(Card.Value v: Card.Value.values())
                     {
-                        cards[countCards] = (new Card(s,v));
+                        cards[countCards] = (new Card(j,s,v));
                         countCards++;
                     }
+                }
                 }//end outter for
         }//end method
 
